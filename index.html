@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport"
+                content="width=device-width,initial-scale=1">
+        <meta content="summary_large_image" name="twitter:card">
+        <meta name="twitter:title" content="World Cup Survey">
+        <meta content="@Mauricio25667" name="twitter:site">
+        <meta content="@Mauricio25667" name="twitter:creator">
+        <meta name="twitter:image" content="https://images.mediotiempo.com/QTNpwSuILEubvkN62yWt0JjfLcs=/958x596/uploads/media/2021/09/11/la-copa-del-mundo-esta.jpg">
+        <meta name="twitter:description" content="Survey about who are the favorites to win the World Cup">
+        
+        <style>
+            body::before {
+                content: '';
+                position: fixed;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;
+                background-image: linear-gradient( 115deg, rgba(173,114,12, 0.8), rgba(232, 154, 37, 0.7) ), url(https://images.mediotiempo.com/QTNpwSuILEubvkN62yWt0JjfLcs=/958x596/uploads/media/2021/09/11/la-copa-del-mundo-esta.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            #container {
+                max-width: 1060px;
+                margin: 0 auto;
+                height: 960px;
+                }
+            
+            #encabezado {
+                top: 0;
+                margin-right: 15%;
+                margin-left: 18%;
+                font-size: 26px;
+                color: #fffaf3;
+                border-radius: 3%;
+                padding: 0.7% 5%;
+                margin-top: 2%;
+                margin-bottom: 0.4%;
+                padding-bottom: 0;
+            }
+            #cuerpo {
+                margin-left: 15%;
+                margin-right: 15%;
+            }
+            .input {
+                background-color: rgba(176, 159, 139, 0.8);
+                padding-left: 40px;
+                padding-right: 40px;
+                font-size: 24px;
+            }
+            #name-label {
+                padding-top: 20px;
+            }
+            #boton {
+                padding-bottom: 50px;
+            }
+            #ask {
+                display: flex;
+                flex-direction: column;
+                column-gap: 2em;
+            }
+            #button-submit {
+                width: 655px;
+                height: 50px;
+                margin-top: 30px;
+                padding-top: 0;
+                font-size: 20px;
+                color: #fffaf3;
+                background-color: #000022;
+            }
+            #dropdown {
+                width: 655px;
+                height: 45px;
+                font-size: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 8px;
+            }
+            label {
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 13px;
+                padding-top: 13px;
+            }
+            [type="text-area"] {
+                width: 645px;
+                height: 175px;
+                font-size: 20px;
+            }
+            [type="text"] {
+                width: 645px;
+                height: 25px;
+                font-size: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 8px;
+            }
+            [type="radio"] {
+                margin-bottom: 15px;
+            }
+            [type="email"] {
+                width: 645px;
+                height: 25px;
+                font-size: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 8px;
+            }
+            [type="number"] {
+                width: 645px;
+                height: 25px;
+                font-size: 20px;
+                padding-top: 8px;
+                padding-bottom: 8px;
+                padding-left: 8px;
+            }
+            [type="checkbox"] {
+                margin-bottom: 15px;
+                
+            }
+            p {
+                margin-top: 0;
+                margin-bottom: 15px;
+                margin-right: 0;
+                padding-top: 20px;
+            }
+            span {
+                padding-left: 8px;
+            }
+            #description {
+                margin-bottom: 30px;
+                padding-top: 0;
+            }
+            @media only screen and (max-device-width : 640px) {
+                #container {
+                    width: 100vw;
+                }
+                #cuerpo {
+                    margin: 0;
+                    width: 100%;
+                }
+                #survey-form {
+                    width: 100%;
+                }
+                #description {
+                    margin-bottom: 15px;
+                }
+                .input {
+                    margin: 0;
+                    width: 86%;
+                    padding-right: 8%;
+                    padding-left: 6%;
+                }
+                .white-text {
+                    width: 100%;
+                }
+                [type="text-area"] {
+                    width: 100%;
+                    height: 175px;
+                    font-size: 20px;
+                }
+                [type="text"] {
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 8px;
+                }
+            
+                [type="email"] {
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 8px;
+                }
+                [type="number"] {
+                    width: 100%;
+                    height: 25px;
+                    font-size: 20px;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    padding-left: 8px;
+                }
+                #dropdown {
+                    width: 100%;
+                }
+                #button-submit {
+                        width: 100%;
+                }
+                p {
+                    padding-top: 10px;
+                }
+            }
+        </style>
+    </head>
+    <body id="container">
+        
+        <article id="encabezado">
+            <h1 id="title">
+                World Cup Survey
+            </h1>
+            <p id="description">
+                Thank you for taking the time to share your candidates and favorites with us
+        </article>
+        <section id="cuerpo">
+            <form id="survey-form">
+                <div class="input">
+                    <label for ="name" id="name-label">Name</label>
+                    <input type="text" id="name" class="white-text" placeholder="Enter your name" required>
+                </div>
+                <div class="input">
+                    <label for="email" id="email-label">Email</label>
+                    <input type="email" id="email" class="white-text" placeholder="Enter your email" required>
+                </div>
+                <div class="input">    
+                    <label for="number" id="numberl-label">Age <span> (opcional)</span></label>
+                    <input type="number" id="number" class="white-text" placeholder="Age" min="10" max="99" required>
+                </div>
+                <div class="input">
+                    <p>Which football federation do you belong to?</p>
+                    <select id="dropdown" required>
+                        <option disabled selected value>Select football asociation</option>
+                        <option value="uefa">UEFA</option>
+                        <option value="conmebol">CONMEBOL</option>
+                        <option value="concacaf">CONCACAF</option>
+                        <option value="afc">AFC</option>
+                        <option value="caf">CAF</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <p>Is your team currently qualified for the World Cup?</p>
+                    <label>
+                        <input type="radio" name="radio" value="yes" checked>Yes
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="No">No
+                    </label>
+                    <label>
+                        <input type="radio" name="radio" value="no-but">No, but he still has chances
+                    </label>
+                </div>
+                <div class="input">
+                    <p id="ask">Of the top nationalities, which are your favorites to win the competition? <span> (You can select more than one)</span></p>
+                    <label>
+                        <input type="checkbox" name="casilla" value="belgium">Belgium
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="brazil">Brazil
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="france">France
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="argentina">Argentina
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="england">England
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="italy">Italy
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="spain">Spain
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="portugal">Portugal
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="denmark">Denmark
+                    </label>
+                    <label>
+                        <input type="checkbox" name="casilla" value="netherlands">Netherlands
+                    </label>
+                </div>
+                <div class="input">
+                    <p>If you have any other comment regarding the countries or your favorite footballers that you think will stand out, you can leave it here</p>
+                    <input type="text-area" class="white-text" placeholder="Enter your comment here...">
+                </div>
+                <div class="input" id="boton">
+                    <button type="submit" id="button-submit">Submit</button>
+                </div>
+            </form>
+        </section>
+    </body>
+</html>
